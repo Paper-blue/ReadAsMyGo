@@ -1,4 +1,4 @@
-# Read! As! My! Goooooooo!
+# Read! As! MyGoooooooo!
 
 [English](#english) | [中文](#中文)
 

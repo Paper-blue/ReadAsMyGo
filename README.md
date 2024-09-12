@@ -1,4 +1,4 @@
-# Enhanced Reading Browser Extension
+# Read!As!My!Goooooooo!
 
 [English](#english) | [中文](#中文)
 

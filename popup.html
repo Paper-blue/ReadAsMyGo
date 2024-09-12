@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>增强阅读插件</title>
+  <style>
+    body { width: 300px; padding: 10px; }
+    label { display: block; margin-top: 10px; }
+    select, input { width: 100%; margin-top: 5px; }
+    button { width: 100%; margin-top: 15px; }
+    #loadingStatus { color: #888; font-size: 12px; margin-top: 5px; }
+    #logSection { margin-top: 15px; }
+    #logToggle { cursor: pointer; user-select: none; }
+    #logContent { 
+      display: none; 
+      max-height: 200px; 
+      overflow-y: auto; 
+      border: 1px solid #ccc; 
+      padding: 5px; 
+      font-size: 12px; 
+      margin-top: 5px; 
+    }
+  </style>
+</head>
+<body>
+  <label for="boldness">加粗程度：</label>
+  <select id="boldness">
+    <option value="light">轻度</option>
+    <option value="medium" selected>中度</option>
+    <option value="heavy">重度</option>
+  </select>
+
+  <label for="englishBoldness">英文加粗比例：</label>
+  <input type="number" id="englishBoldness" min="0" max="1" step="0.1" value="0.5">
+  
+  <label for="chineseBoldness">中文加粗概率：</label>
+  <input type="number" id="chineseBoldness" min="0" max="1" step="0.1" value="0.2">
+  
+  <label for="maxBoldWordsPerSentence">每句最大加粗词数：</label>
+  <input type="number" id="maxBoldWordsPerSentence" min="1" max="10" step="1" value="3">
+  
+  <button id="toggleReading">开启增强阅读</button>
+  <div id="loadingStatus"></div>
+
+  <div id="logSection">
+    <div id="logToggle">▶ 显示日志</div>
+    <pre id="logContent"></pre>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

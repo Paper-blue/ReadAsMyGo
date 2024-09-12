@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "增强阅读插件",
+  "version": "1.0",
+  "description": "提供中英文增强阅读功能",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["lib/jieba.js", "content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["common_words.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -24,6 +24,7 @@ Skimming is a reading technique used to identify the main ideas of a text quickl
 - Customizable maximum number of bolded words per sentence in Chinese
 - Uses word frequency data for intelligent Chinese text bolding
 - Simple toggle on/off functionality
+- For Chinese, users can customize word frequencies (common_words.json)
 
 ### Before and After
 
@@ -57,6 +58,11 @@ After:
 3. Click the "Toggle Reading Mode" button to activate the enhanced reading mode on the current page.
 4. To deactivate, simply click the "Toggle Reading Mode" button again.
 
+### Future Development
+
+1. Implement NLP techniques to analyze sentence structure and main components.
+2. Develop an engine to predict eye jump fixation positions, allowing readers to save time in finding the next eye jump location under the engine's guidance. Integrate human eye reading attention mechanisms and the saccade-fixation conversion process.
+
 ---
 
 ## 中文
@@ -77,6 +83,7 @@ After:
 - 可自定义中文每句话的最大加粗词数
 - 使用词频数据进行智能中文文本加粗
 - 简单的开启/关闭功能
+- 对于中文，用户可以自定义词频（[common_words.json]）
 
 ### 使用前后对比
 
@@ -109,3 +116,9 @@ After:
 2. 根据需要调整加粗程度、英文加粗百分比、中文加粗概率和每句最大加粗词数。
 3. 点击"切换阅读模式"按钮,在当前页面激活增强阅读模式。
 4. 要停用,只需再次点击"切换阅读模式"按钮即可。
+
+### 未来开发展望
+
+1. 使用自然语言处理(NLP)技术分析句子结构和主要成分。
+2. 开发引擎预判眼跳凝视位置,让读者在引擎的标注下节约寻找下一次眼跳位置的时间。整合人眼阅读注意力机制与扫视-凝视转换过程。
+
